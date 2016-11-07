@@ -27,6 +27,10 @@ Looking up what packages on my system depend on "gtk2":
 
 
 ## Installation
+Pacli is the official repository Manjaro and can be installed with the following command:
+```
+sudo pacman -S pacli
+```
 
 ### Installation from the AUR
 Install [pacli from the AUR](https://aur.archlinux.org/packages/pacli/).
@@ -37,31 +41,24 @@ pacli
 ```
 
 ### Manual Installation
-First, make sure all dependencies of pacli are installed on your system:
-- pacman
-- [yaourt](https://wiki.archlinux.org/index.php/Yaourt)
-- [fzf](https://aur.archlinux.org/packages/fzf/)
-- [downgrade](https://aur.archlinux.org/packages/downgrade/)
-- bash
-- sudo
-- gzip
-- git
-- [update-notifier](https://github.com/Chrysostomus/update-notifier) (optional dependency - will notify the user about available updates)
-
-Then, clone this Github repository to your system with the command:
-```
-git clone https://github.com/Manjaro-Pek/pacli
-```
-and execute pacli:
-```
-cd pacli && chmod +x pacli && ./pacli
-```
+This installation method is no longer available.
 
 
 ## Configuration
 
 pacli accepts the following config file:
 $HOME/.config/paclirc
+
+A default version of this file is available in this github repository. In this config file you can tweak the behavior of pacli e.g. for using pacaur instead of yaourt.
+
+
+## Hidden Options
+
+There are some hidden Options available without documentation:
+- m: use different menu
+- 100: Shows system information
+- 111: Let's you manage .pacnew files
+- 220: Let's you install directly from git repository
 
 
 ## Help
